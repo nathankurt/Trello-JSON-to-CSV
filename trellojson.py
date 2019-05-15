@@ -10,4 +10,4 @@ with open(f_name, encoding='utf-8-sig') as f_input:
     df = pd.read_json(f_input)
 
 new_file_name = f_name.split(".")[0] + ".csv"
-df.to_csv(f_name, encoding='utf-8', index=False)
+df.to_csv(new_file_name, encoding='utf-8', index=False)
